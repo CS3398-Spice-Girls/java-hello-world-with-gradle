@@ -38,4 +38,11 @@ public class TestGreeter {
       g.setName(new StringBuffer("Jean-Michel").reverse().toString());
       assertEquals(g.getName(), "lehciM-naeJ");
    }
+
+   @Test
+   public void newtestJMGreeterFail()
+   {
+      g.setName(new StringBuffer("Jean-Michel").reverse().toString());
+      assertEquals(g.sayHello(), "lehciM-naeJ olleH");
+   }
 }
