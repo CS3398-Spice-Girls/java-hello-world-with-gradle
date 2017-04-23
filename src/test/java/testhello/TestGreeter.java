@@ -32,7 +32,7 @@ public class TestGreeter {
    }
 
    @Test
-   public void cjbTestGreeterPass()
+   public void newestcjbGreeterPass()
    {
        
        g.setName("Cody");
