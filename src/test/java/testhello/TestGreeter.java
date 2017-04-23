@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+import java.lang.StringBuffer;
 
 
 public class TestGreeter {
@@ -29,5 +30,12 @@ public class TestGreeter {
       g.setName("World");
       assertEquals(g.getName(),"World");
       assertEquals(g.sayHello(),"Hello World!");
+   }
+
+   @Test
+   public void newtestJMGreeterPass()
+   {
+      g.setName(new StringBuffer("Jean-Michel").reverse().toString());
+      assertEquals(g.getName(), "lehciM-naeJ");
    }
 }
