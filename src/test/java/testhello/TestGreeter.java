@@ -39,4 +39,12 @@ public class TestGreeter {
        assertEquals(g.getName(), "Cody");
    }
 
+   @Test
+   public void newestcjbGreeterFail()
+   {
+       g.setName("1234");
+       assertEquals(g.getName(), 1234);
+   }
+
+
 }
