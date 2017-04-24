@@ -30,4 +30,19 @@ public class TestGreeter {
       assertEquals(g.getName(),"World");
       assertEquals(g.sayHello(),"Hello World!");
    }
+
+   @Test
+   public void newtestMAEGreeterPass()
+   {
+         g.setName("Michael's Pass");
+         assertEquals(g.getName(), "Michael's Pass'");
+   }
+   
+   @Test
+   public void newtestMAEGreeterFail()
+   {
+         g.setName("Oops");
+         assertEquals(g.getName().toLowerCase(), "OOPS");
+   }
+}
 }
