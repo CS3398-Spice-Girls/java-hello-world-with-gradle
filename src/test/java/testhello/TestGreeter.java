@@ -32,7 +32,7 @@ public class TestGreeter {
    }
 
    @Test
-   public voild newtestTGGreeterPass()
+   public void newtestTGGreeterPass()
    {
       g.setName("World");
       assertEquals(g.getName(),"World");
