@@ -39,4 +39,11 @@ public class TestGreeter {
       assertEquals(g.sayHello(),"Hello World!");
    }
 
+   @Test
+   public void newtestTGGreeterFail()
+   {
+      g.setName("World")
+      assertEquals(g.getName(),"World");
+      assertEquals(g.sayHello(),"Hello World!");
+   }
 }
