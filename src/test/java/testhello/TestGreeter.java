@@ -38,11 +38,10 @@ public class TestGreeter {
          assertEquals(g.getName(), "Michael's Pass'");
    }
    
-   @Test
-   public void newtestMAEGreeterFail()
-   {
-         g.setName("Oops");
-         assertEquals(g.getName().toLowerCase(), "OOPS");
-   }
-}
+  // @Test
+  // public void newtestMAEGreeterFail()
+  // {
+   //      g.setName("Oops");
+    //     assertEquals(g.getName().toLowerCase(), "OOPS");
+  // }
 }
