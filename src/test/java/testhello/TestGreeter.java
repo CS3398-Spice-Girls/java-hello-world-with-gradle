@@ -39,6 +39,13 @@ public class TestGreeter {
        assertEquals(g.getName(), "Michael");
    }
 
+   @Test
+   public void newestMAEGreeterFail()
+   {
+       g.setName("This is not equal to");
+       assertEquals(g.getName(), "That");
+   }
+
 }
 
 
