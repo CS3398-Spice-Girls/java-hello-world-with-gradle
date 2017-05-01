@@ -37,4 +37,11 @@ public class TestGreeter {
       g.setName("WoRlD");
       assertEquals(g.sayHello().toLowerCase(), "hello world!");
    }
+
+   @Test
+   public void newtestEDHGreeterFail()
+   {
+      g.setName("I'm early");
+      assertTrue(g.sayHello().equals("Hello I'm not late!"));
+   }
 }
